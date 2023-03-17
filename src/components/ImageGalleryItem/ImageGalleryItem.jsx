@@ -1,5 +1,5 @@
 import React,{Component} from "react";
-import PropTypes, { number } from 'prop-types'
+import PropTypes from 'prop-types'
 import css from "./ImageGalleryItem.module.css"
 
 
@@ -18,6 +18,7 @@ class ImageGalleryItem extends Component {
     
   render() {
     const { pictures } = this.props;
+    console.log(pictures);
       return (
         pictures.map(pictur => (
           <li className={css.ImageGalleryItem} onClick={this.onepModal} key={pictur.id}>
