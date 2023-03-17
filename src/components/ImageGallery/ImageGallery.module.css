@@ -1,0 +1,114 @@
+
+
+.ImageGallery {
+    display: grid;
+    max-width: calc(100vw - 48px);
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.error {
+    text-align: center;
+    font-size: 44px;
+    color: red;
+}
+
+.enterWord {
+    text-align: center;
+    font-size: 44px;
+    color: green;
+}
+
+
+.loaderBlock {
+    display: block;
+    margin: 0 auto;
+}
+
+ .loaderBtn {
+     position: fixed;
+     bottom: 8px;
+     left: 80px;
+
+ }
+
+
+ @media screen and (min-width: 420px) {
+    .loaderBtn {
+        left: 120px;
+    }
+}
+
+ @media screen and (min-width: 520px) {
+     .loaderBtn {
+         left: 180px;
+     }
+ }
+@media screen and (min-width: 700px) {
+    .loaderBtn {
+        left: 230px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .loaderBtn {
+        left: 260px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .loaderBtn {
+        left: 290px;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .loaderBtn {
+        left: 310px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .loaderBtn {
+        left: 370px;
+    }
+}
+@media screen and (min-width: 950px) {
+    .loaderBtn {
+        left: 380px;
+    }
+} 
+
+@media screen and (min-width: 1050px) {
+    .loaderBtn {
+        left: 420px;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .loaderBtn {
+        left: 510px;
+    }
+}
+
+@media screen and (min-width: 1280px) { 
+    .loaderBtn {
+        left: 560px;
+    } 
+}
+@media screen and (min-width: 1350px) {
+    .loaderBtn {
+        left: 600px;
+    }
+}
+@media screen and (min-width: 1450px) {
+    .loaderBtn {
+        left: 760px;
+    }
+}
