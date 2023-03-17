@@ -96,7 +96,7 @@ class ImageGallery extends Component {
                 </ul>    
             )
         }
-        if (img.length !== 0 && status === "resolved" || "loading") {          
+        if (img.length !== 0 || status === "resolved" || "loading") {          
             return (
             <ul className={css.ImageGallery} onClick={this.onepModal}>
             <ImageGalleryItem pictures={img} />
