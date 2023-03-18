@@ -83,7 +83,7 @@ class ImageGallery extends Component {
             return (<p className={css.enterWord}>Введите слово</p>);
         }
         if (status === "pending") {
-            return (<div className={css.loaderBlock}><Loader /></div>);
+            return (<Loader/>);
         }
         if (img.length === 0) {
             return (<p className={css.error}>Ничего не найдено</p>);
@@ -98,24 +98,22 @@ class ImageGallery extends Component {
         }
         if (img.length !== 0 || status === "resolved" || "loading") {          
             return (
-            <ul className={css.ImageGallery} onClick={this.onepModal}>
+            <>
+            <ul className={css.ImageGallery} onClick={this.onepModal}>        
             <ImageGalleryItem pictures={img} />
-            <div className={css.loaderBtn}>        
+            </ul>            
             {status === "loading"
             ? <Loader/>
             : <Button
             onSubmit={this.onGetImgPage} page={page}/>}
             {showModal && <Modal closeModal={this.closeModal} modalImg={modalImg} />}
-            </div>            
-            </ul>
-   
+            </>        
             );
         }
     }
 }
 
 export default ImageGallery;
-
 
 
 
