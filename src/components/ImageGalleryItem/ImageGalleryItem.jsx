@@ -18,7 +18,7 @@ class ImageGalleryItem extends Component {
     
   render() {
     const { pictures } = this.props;
-    console.log(pictures);
+ 
       return (
         pictures.map(pictur => (
           <li className={css.ImageGalleryItem} onClick={this.onepModal} key={pictur.id}>
